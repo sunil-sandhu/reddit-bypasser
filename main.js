@@ -16,6 +16,5 @@ const apiKey = require("./2captcha/apiKey");
   await interface.evaluatePage(
     `document.getElementById("g-recaptcha-response").innerHTML="${response}";`
   );
-
   await interface.querySelectorButtonAndClick("#register-form button[type=submit]");
 })();
